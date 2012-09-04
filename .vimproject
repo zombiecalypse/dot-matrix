@@ -1,0 +1,7 @@
+
+dot-pixel=/home/aaron/Dropbox/Projects/dot-pixel {
+	src=dot-pixel filter="\(test_\)\@!*.py" {
+	}
+	tests=dot-pixel filter=**/test_*.py" {
+	}
+}
