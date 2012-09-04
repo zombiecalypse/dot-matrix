@@ -1,7 +1,14 @@
-
 dot-pixel=/home/aaron/Dropbox/Projects/dot-pixel {
+ dot-pixel.py
+ setup.py
+ test.sh
 	src=dot-pixel filter="\(test_\)\@!*.py" {
+  __init__.py
+  convert.py
 	}
-	tests=dot-pixel filter=**/test_*.py" {
+	tests=dot-pixel filter="**/test_*.py" {
+  __init__.py
+  convert.py
+  test.svg
 	}
 }

@@ -10,4 +10,4 @@ setup(
 	author_email = "None",
 	scripts = ['dot-pixel.py'],
 	packages = ['dot-pixel'],
-	install_requires = ["setuptools", 'svgwrite', 'PIL'])
+	install_requires = ["setuptools", 'svgwrite', 'PIL', 'numpy', 'palette'])
