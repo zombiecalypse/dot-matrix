@@ -19,6 +19,12 @@ class DotMatrix(object):
             width = None, height = None,
             size_of_pixel = 10,
             distance_between_pixels = 0):
+        """
+        size_threshold:           smaller dots than this are not displayed
+        width/height:             scale image, only one can be provided!
+        size_of_pixel:            makes the pixel-circles bigger
+        distance_between_pixels:  the edges of the maximal pixels have this distance
+        """
         if width and height: raise ValueError(self._to_preserve)
         self._image = self.openToHsv(file)
         self._setSize(self._image, width, height)
