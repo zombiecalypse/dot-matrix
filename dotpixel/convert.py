@@ -68,7 +68,7 @@ class DotMatrix(object):
         r = int(1/self._scale_factor)/2
         k_left, k_top = max(ox-r, 0), max(oy-r,0)
         k_right, k_bot = min(ox+r, owidth), min(oy+r, oheight)
-        return [self._image[k_left:k_right+1,k_top:k_bot+1,i].mean()\
+        return [numpy.median(self._image[k_left:k_right+1,k_top:k_bot+1,i])\
                 for i in range(3)]
         
 
